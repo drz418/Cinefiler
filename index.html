@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinefiler: A Film Puzzle</title>
+    <script src="script.js" type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="game-container">
+       <header class="text-center my-2 flex-shrink-0 flex items-center justify-between px-4">
+    <div class="flex-grow text-center ml-auto">
+        <h1 class="text-2xl font-bold">Cinefiler</h1>
+        <p class="text-zinc-400 text-sm">Sort films into groups of four!</p>
+    </div>
+    <button id="how-to-play-button" class="px-2 py-2 bg-zinc-700 hover:bg-zinc-600 rounded-full font-semibold transition-colors text-sm w-8 h-8 flex items-center justify-center">
+    <img src="svg/question_mark.svg" alt="How to Play" class="w-4 h-4 text-white">
+</button>
+</header>
+
+        <div id="solved-container" class="mb-2 flex-shrink-0"></div>
+        
+        <div id="grid-container" class="grid-container mb-2"></div>
+        
+        <div class="controls-container flex-shrink-0">
+            <div class="flex items-center space-x-1 mb-2">
+                <span class="font-medium text-sm">Mistakes remaining:</span>
+                <div id="mistakes-container" class="flex space-x-1"></div>
+            </div>
+            <div class="flex space-x-2">
+                <button id="shuffle-button" class="px-3 py-1.5 bg-zinc-700 hover:bg-zinc-600 rounded-full font-semibold transition-colors text-sm">Shuffle</button>
+                <button id="deselect-button" class="px-3 py-1.5 bg-zinc-700 hover:bg-zinc-600 rounded-full font-semibold transition-colors text-sm">Deselect All</button>
+                <button id="submit-button" class="px-3 py-1.5 bg-zinc-400 rounded-full font-semibold transition-colors disabled:bg-zinc-700 disabled:text-zinc-500 text-sm" disabled>Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="message-toast" class="message-toast bg-zinc-800"></div>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title" class="text-3xl font-bold mb-2"></h2>
+            <p id="modal-subtitle" class="text-lg text-zinc-300 mb-4"></p>
+            <div id="modal-results" class="space-y-2 mb-6"></div>
+            <button id="play-again-button" class="w-full py-3 bg-zinc-200 text-zinc-900 rounded-full font-bold hover:bg-white transition-colors">Play Again</button>
+        </div>
+    </div>
+    
+     <script src="script.js"></script>
+    
+    <div id="how-to-play-modal" class="modal-overlay">
+    <div class="modal-content">
+        <button id="how-to-play-close-button" class="absolute top-2 right-2 text-zinc-400 hover:text-white transition-colors">&times;</button>
+        <h2 class="text-3xl font-bold mb-2">How to Play</h2>
+        <div class="text-left space-y-4">
+            <p>The goal is to sort the films into groups of four.</p>
+            <p><strong>Rules:</strong></p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Each group has a unique theme or connection.</li>
+                <li>You get a four mistakes. Pay attention to the "Mistakes remaining" counter.</li>
+                <li>Select four items and click "Submit" to see if you identified a group.</li>
+                <li>The "Shuffle" button rearranges the items on the grid.</li>
+                <li>The "Deselect All" button clears your current selections.</li>
+            </ul>
+            <p><strong>Tips:</strong></p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Examples of some groups might be Genre, Featuring a certain actor, Director, Theme, Topic etc</li>
+                <li>Watch out for misdirects!</li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
