@@ -20,46 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const howToPlayModal = document.getElementById('how-to-play-modal');
     const howToPlayCloseButton = document.getElementById('how-to-play-close-button');
 
-    /*
-    const puzzles = [
-        {
-            solution: {
-                'WHODUNIT?': ['Chinatown', 'Se7en', 'Decision to Leave', 'The Girl with the Dragon Tattoo'],
-                'ACTOR PLAYING TWINS': ['Sinners', 'The Parent Trap', 'The Prestige', 'Adaptation'],
-                'STARRING: JAMIE LEE CURTIS': ['Halloween', 'Knives Out', 'Freaky Friday', 'EEAAO'],
-                'DIRECTOR: BONG JOON HO': ['Parasite', 'Mickey 17', 'The Host', 'Snowpiercer']
-            },
-            words: ['Chinatown', 'Se7en','Decision to Leave', 'The Girl with the Dragon Tattoo', 'Sinners', 'The Parent Trap', 'The Prestige', 'Adaptation', 'Halloween', 'Knives Out', 'Freaky Friday', 'EEAAO', 'Parasite', 'Mickey 17', 'The Host', 'Snowpiercer']
-        },
-        // Additional puzzles can be added here
-        
-    ];
-
-    // A map of words to image URLs
-const wordImages = {
-    // Puzzle 01 
-
-    'Adaptation': 'images_01/Adaptation.jpg',
-    'Chinatown': 'images_01/Chinatown.jpg',
-    'Decision to Leave': 'images_01/Decision_to_Leave.jpg',
-    'EEAAO': 'images_01/EEAAO.jpg',
-    'Freaky Friday': 'images_01/Freaky_Friday.jpg',
-    'Halloween': 'images_01/Halloween.jpg',
-    'Knives Out': 'images_01/Knives_Out.jpg',
-    'Mickey 17': 'images_01/Mickey_17.jpg',
-    'Parasite': 'images_01/Parasite.jpg',
-    'Se7en': 'images_01/Se7en.jpg',
-    'Snowpiercer': 'images_01/Snowpiercer.jpg',
-    'Sinners': 'images_01/Sinners.jpg',
-    'The Parent Trap': 'images_01/The_Parent_Trap.jpg',
-    'The Prestige': 'images_01/The_Prestige.jpg',
-    'The Host': 'images_01/The_Host.jpg',
-    'The Girl with the Dragon Tattoo': 'images_01/The_Girl_with_the_Dragon_Tattoo.jpg',
-    // Additional words for future puzzles 
-
-};
-*/
-
     const colors = {
         0: { bg: 'bg-yellow-400', text: 'text-yellow-900', name: "Easy" },
         1: { bg: 'bg-green-500', text: 'text-green-900', name: "Medium" },
@@ -254,7 +214,7 @@ function createGrid() {
         }
         
         if (isOneAway) {
-            showMessage("One word away...");
+            showMessage("One film away...");
         } else {
             showMessage("Not a correct group");
         }
