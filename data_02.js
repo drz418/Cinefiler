@@ -3,7 +3,7 @@ const puzzles = [
         solution: {
             'STUDIO GHIBLI': ['Spirited Away', 'Princess Mononoke', 'Ponyo', 'The Tale of Princess Kaguya'],
             'PSYCHOLOGICAL THRILLER': ['Perfect Blue', 'The Shinning', 'The Sixth Sense', 'Black Swan'],
-            'TINY PEOPLE': ['The Borrowers', 'Honey I Shrunk The Kids', 'The Indian and The Cupboard', 'Downsizing'],
+            'TINY PEOPLE': ['The Borrowers', 'Honey I Shrunk The Kids', 'The Indian In The Cupboard', 'Downsizing'],
             'FEATURING: BEN AFFLECK': ['Good Will Hunting', 'Argo', 'Gigli', 'Gone Girl']
         },
         words: ['Spirited Away', 'Princess Mononoke', 'Ponyo', 'The Tale of Princess Kaguya',
