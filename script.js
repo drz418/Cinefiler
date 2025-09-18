@@ -1,4 +1,4 @@
-import { puzzles, wordImages } from './data.js';
+import { puzzles, wordImages } from './data_02.js';
 document.addEventListener('DOMContentLoaded', () => {
     const gridContainer = document.getElementById('grid-container');
     const mistakesContainer = document.getElementById('mistakes-container');
